@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <title>Hexagons</title>
+  <title>Document</title>
 </head>
 <body>
   <div class="container">
@@ -71,16 +71,14 @@
     </div>
   </div>
   <script>
-    // this function will change hexagon color to white
+    // this is for changing the hexagon color to white while hovering
     // argument "this" sends the current element. which is stored in the element parameter
     function cngbg(element) { // argument "this" sends the current element. which is stored in the element parameter
       var parent = element.parentNode; // .parentNode selects the parent element which is the whole hexagon div
       parent.style.setProperty('--hexagon-bg', 'white'); // finally changing the variable in css takes place only on that hexagon
     }
-    // // Create a function for setting a variable value
     function cngbgback(element) {
       var parent = element.parentNode;
-    // Set the value of variable --blue to another value (in this case "lightblue")
       parent.style.setProperty('--hexagon-bg', '#ccddee');
     }
     </script> 
