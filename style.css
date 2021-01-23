@@ -28,7 +28,7 @@
   width: calc( 33 * var(--spacer) );
   margin: 0 auto;
   position: absolute;
-  right: 401px;
+  right: 402px;
   bottom: 157px;
 }
 .hexagon {
