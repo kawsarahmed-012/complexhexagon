@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+:root {
+  --spacer: 15px;
+}
+.hexagon {
+  --hexagon-bg: #ccddee;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1140px;
+  height: 400px;
+  padding: 5em;
+  background-color: #0061da;
+  margin: 0 auto;
+  position: relative;
+}
+.inner-1 {
+  display: flex;
+  width: calc( 44 * var(--spacer) );
+  margin: 0 auto;
+}
+.inner-2 {
+  display: flex;
+  width: calc( 33 * var(--spacer) );
+  margin: 0 auto;
+  position: absolute;
+  right: 401px;
+  bottom: 157px;
+}
+.hexagon {
+  height: calc( 12 * var(--spacer) );
+  width: calc( 11 * var(--spacer) );
+}
+.hexagon h3:nth-child(1),
+.hexagon h3:nth-child(3) {
+  width: 0px;
+  height: 0px;
+  border-left: calc( 5.2 * var(--spacer) ) solid transparent;
+  border-right: calc( 5.2 * var(--spacer) ) solid transparent;
+  transition: border 200ms;
+}
+.hexagon h3:nth-child(1) {
+  border-bottom: calc( 3 * var(--spacer) ) solid var(--hexagon-bg);
+}
+.hexagon h3:nth-child(3) {
+  border-top: calc( 3 * var(--spacer) ) solid var(--hexagon-bg);
+}
+.hexagon h3:nth-child(2) {
+  background-color: var(--hexagon-bg);
+  width: calc( 10.4 * var(--spacer) );
+  height: calc( 6 * var(--spacer) );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 200ms;
+}
+.hexagon h3:nth-child(2) i {
+  font-size: calc( 3 * var(--spacer) );
+}
+.hexagon h3:nth-child(2) p {
+  font-size: calc( 1.4 * var(--spacer) );
+  font-weight: 400;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  margin-top: calc( 0.5 * var(--spacer) );
+}

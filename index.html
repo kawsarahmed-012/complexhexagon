@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="inner-1">
+      <div class="hexagon">
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)"></h3>
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)">
+          <i class="fab fa-wordpress"></i>
+          <p>wp website</p>
+        </h3>
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)"></h3>
+      </div>
+      <div class="hexagon">
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)"></h3>
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)">
+          <i class="fab fa-envira"></i>
+          <p>theme dev</p>
+        </h3>
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)"></h3>
+      </div>
+      <div class="hexagon">
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)"></h3>
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)">
+          <i class="fab fa-internet-explorer"></i>
+          <p>wp site seo</p>
+        </h3>
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)"></h3>
+      </div>
+      <div class="hexagon">
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)"></h3>
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)">
+          <i class="fas fa-shopping-cart"></i>
+          <p>e-commerce</p>
+        </h3>
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)" ></h3>
+      </div>
+    </div>
+    <div class="inner-2">
+      <div class="hexagon">
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)"></h3>
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)">
+          <i class="fas fa-desktop"></i>
+          <p>html - css</p>
+        </h3>
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)"></h3>
+      </div>
+      <div class="hexagon">
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)"></h3>
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)">
+          <i class="fas fa-database"></i>
+          <p>php mysql</p>
+        </h3>
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)"></h3>
+      </div>
+      <div class="hexagon">
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)"></h3>
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)">
+          <i class="fas fa-code"></i>
+          <p>laravel</p>
+        </h3>
+        <h3 onmouseover="cngbg(this)" onmouseleave="cngbgback(this)"></h3>
+      </div>
+    </div>
+  </div>
+  <script>
+    // this function will change hexagon color to white
+    // argument "this" sends the current element. which is stored in the element parameter
+    function cngbg(element) { // argument "this" sends the current element. which is stored in the element parameter
+      var parent = element.parentNode; // .parentNode selects the parent element which is the whole hexagon div
+      parent.style.setProperty('--hexagon-bg', 'white'); // finally changing the variable in css takes place only on that hexagon
+    }
+    // // Create a function for setting a variable value
+    function cngbgback(element) {
+      var parent = element.parentNode;
+    // Set the value of variable --blue to another value (in this case "lightblue")
+      parent.style.setProperty('--hexagon-bg', '#ccddee');
+    }
+    </script> 
+</body>
+</html>
